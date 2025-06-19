@@ -89,4 +89,4 @@ This project uses Task Master AI for project management. See `.taskmaster/` for 
 
 ## License
 
-This project is for educational purposes. 
+This project is for educational purposes.
