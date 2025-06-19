@@ -1,0 +1,177 @@
+# Shepherd's Pie Marketing Website PRD
+
+## Overview
+A single-page marketing landing page for www.shepherds-pie.com showcasing three different shepherd's pie recipes. The website serves as an interactive recipe showcase where users can browse beautiful images of different shepherd's pie variations and access detailed cooking instructions through an intuitive dropdown interface.
+
+## Core Features
+
+### Recipe Image Gallery
+- Display three high-quality shepherd's pie images prominently on the landing page
+- Images should be visually appealing and professionally styled
+- Each image represents a different recipe variation (Classic, Vegetarian, and Gourmet)
+
+### Interactive Recipe Selection  
+- Users can click on any of the three images to select a recipe
+- Visual feedback when hovering over images
+- Clear indication of which recipe is currently selected
+
+### Recipe Details Dropdown
+- When a recipe is selected, a dropdown/accordion component opens below
+- Contains complete recipe information including:
+  - Ingredients list with quantities
+  - Step-by-step cooking directions
+  - Prep time and cooking time
+  - Serving size information
+- Smooth animation for opening/closing the dropdown
+
+### Responsive Design
+- Fully responsive layout that works on desktop, tablet, and mobile
+- Mobile-first approach with touch-friendly interactions
+- Optimized image loading and layout adjustments
+
+## User Experience
+
+### User Personas
+- Home cooking enthusiasts looking for shepherd's pie recipes
+- Food bloggers and culinary hobbyists
+- Families planning comfort food meals
+
+### Key User Flows
+1. User lands on the homepage and sees three appetizing shepherd's pie images
+2. User hovers over images to see visual feedback
+3. User clicks on desired recipe image
+4. Recipe dropdown smoothly opens with detailed instructions
+5. User reads through ingredients and cooking steps
+6. User can click another image to switch recipes seamlessly
+
+### UI/UX Considerations
+- Clean, modern design with focus on food photography
+- Easy-to-read typography for recipe instructions
+- Intuitive navigation without cognitive load
+- Fast loading times with optimized images
+- Accessible design with proper contrast and screen reader support
+
+## Technical Architecture
+
+### Frontend Stack
+- **Next.js 14** with App Router for server-side rendering and optimal performance
+- **React 18** with functional components and hooks
+- **TypeScript** for type safety and better developer experience
+- **Tailwind CSS** for utility-first styling and responsive design
+
+### Component Structure
+- Main layout component with header and hero section
+- Recipe gallery component for displaying images
+- Recipe card components for individual recipes
+- Dropdown/accordion component for recipe details
+- Responsive image components with optimization
+
+### Data Management
+- Static recipe data stored in TypeScript interfaces
+- No external API calls or database connections
+- Recipe data includes: title, description, image path, ingredients, instructions, timing, servings
+
+### Styling Approach
+- Tailwind CSS for all styling with custom configuration
+- Responsive design using Tailwind's breakpoint system
+- Custom animations for dropdown interactions
+- Optimized for both light themes (no dark mode required for MVP)
+
+## Development Roadmap
+
+### Phase 1: Project Foundation
+- Set up Next.js project with TypeScript and Tailwind CSS
+- Configure project structure and basic routing
+- Set up static asset handling for images
+- Create basic layout with responsive header
+
+### Phase 2: Recipe Data Structure
+- Define TypeScript interfaces for recipe data
+- Create hardcoded recipe data for three shepherd's pie variations:
+  - Classic Shepherd's Pie
+  - Vegetarian Shepherd's Pie  
+  - Gourmet Shepherd's Pie with Wine
+- Implement recipe data validation and typing
+
+### Phase 3: Core UI Components
+- Build responsive recipe image gallery component
+- Implement recipe card components with hover effects
+- Create reusable button and typography components
+- Add basic responsive layout structure
+
+### Phase 4: Interactive Recipe Selection
+- Implement click handling for recipe selection
+- Add visual feedback for selected state
+- Create dropdown/accordion component for recipe details
+- Add smooth animations for state transitions
+
+### Phase 5: Recipe Details Display
+- Build comprehensive recipe details layout
+- Format ingredients list with proper styling
+- Display step-by-step cooking instructions
+- Add recipe metadata (timing, servings, etc.)
+
+### Phase 6: Polish and Optimization
+- Optimize images for web performance
+- Add loading states and smooth transitions
+- Ensure full responsive behavior across devices
+- Final styling polish and visual improvements
+
+## Logical Dependency Chain
+
+### Foundation First
+1. Project setup and configuration must be completed before any development
+2. TypeScript interfaces and data structures before components
+3. Basic layout and styling system before interactive features
+
+### Progressive Enhancement
+1. Static image gallery before interactive selection
+2. Recipe selection mechanism before dropdown functionality
+3. Basic dropdown before animations and polish
+4. Core functionality before performance optimizations
+
+### Usable Milestones
+1. After Phase 3: Static recipe showcase (viewable but not interactive)
+2. After Phase 4: Interactive recipe selection (clickable but basic display)
+3. After Phase 5: Full functionality (complete recipe viewing experience)
+4. After Phase 6: Production-ready application
+
+## Risks and Mitigations
+
+### Technical Challenges
+- **Image optimization**: Use Next.js Image component with proper sizing and formats
+- **Mobile responsiveness**: Test early and often on various device sizes
+- **Animation performance**: Use CSS transforms and avoid layout thrashing
+
+### MVP Scope Management
+- Focus on core functionality first (recipe selection and display)
+- Defer advanced animations until basic interactions work
+- Prioritize mobile experience as primary use case
+
+### Development Efficiency
+- Use Tailwind's component patterns to avoid custom CSS
+- Leverage Next.js built-in optimizations for images and performance
+- Keep recipe data simple and focused on essential information
+
+## Appendix
+
+### Recipe Content Requirements
+Each recipe should include:
+- High-quality hero image (optimized for web)
+- Recipe title and brief description
+- Complete ingredients list with measurements
+- Detailed step-by-step instructions
+- Prep time, cook time, and total time
+- Number of servings
+
+### Performance Targets
+- First Contentful Paint < 2 seconds
+- Largest Contentful Paint < 3 seconds
+- Mobile-friendly design with touch targets ≥ 44px
+- Accessible contrast ratios and keyboard navigation
+
+### Technical Specifications
+- Support for modern browsers (Chrome, Firefox, Safari, Edge)
+- No Internet Explorer support required
+- Progressive enhancement for JavaScript-disabled users
+- SEO-friendly with proper meta tags and structured data 

@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "prefer-const": "error",
+    "no-unused-vars": "error"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  }
+} 
