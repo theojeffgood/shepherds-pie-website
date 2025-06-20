@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import React from 'react'
 import './globals.css'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -54,19 +55,7 @@ export default function RootLayout({
             {children}
           </main>
           
-          <footer className="bg-gray-100 mt-auto">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8 text-center">
-              <p className="text-sm md:text-base text-gray-600">
-                &copy; 2024 Shepherd&apos;s Pie Recipes. All rights reserved.
-              </p>
-              
-              <div className="mt-4 md:mt-6">
-                <p className="text-xs md:text-sm text-gray-500">
-                  Made with ❤️ for food lovers everywhere
-                </p>
-              </div>
-            </div>
-          </footer>
+          <Footer />
         </div>
       </body>
     </html>

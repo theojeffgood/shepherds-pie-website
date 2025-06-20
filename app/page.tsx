@@ -25,39 +25,36 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero section with image and content */}
       <section className="h-[75vh] flex">
-        {/* Left side - Hero image (placeholder) */}
+        {/* Left side - Hero image */}
         <div className="w-1/2 relative">
-          <div className="w-full h-full bg-gradient-to-br from-amber-100 to-orange-200 flex items-center justify-center">
-            <div className="text-center text-gray-500">
-              <div className="w-24 h-24 mx-auto bg-gray-300 rounded-lg mb-4 flex items-center justify-center">
-                <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <p className="text-lg font-medium">Hero Image Placeholder</p>
-              <p className="text-sm">Replace with your image</p>
-            </div>
-          </div>
+          <Image
+            src="/images/hero-image.jpg"
+            alt="Delicious shepherd's pie - the perfect comfort food"
+            fill
+            sizes="50vw"
+            className="object-cover"
+            priority={true}
+          />
         </div>
 
         {/* Right side - Header content */}
         <div className="w-1/2 flex items-center justify-center bg-white px-8 md:px-12 lg:px-16">
           <div className="text-center max-w-2xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-              Shepherd&apos;s Pie Recipes
+              Our Most Popular Shepherd&apos;s Pies
             </h1>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl mb-6 md:mb-8">
-              Classic comfort food recipes made simple
+            We&apos;ve made a lot of shepherd&apos;s pies. As the creators of Half Lemons, we test recipes for a living. These are the ones we keep coming back to. 
             </p>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
-              Discover three amazing variations of the classic comfort food - from traditional to vegetarian to gourmet versions.
+              Enjoy.
             </p>
           </div>
         </div>
       </section>
       
       {/* Recipe gallery section - positioned to show top 15% */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12" aria-label="Recipe gallery">
+      <section className="container mx-auto mt-16 px-4 sm:px-6 lg:px-8 py-8 md:py-12" aria-label="Recipe gallery">
         <RecipeGallery 
           recipes={recipes} 
           onSelectRecipe={handleSelectRecipe}
