@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Delicious Shepherd&apos;s Pie Recipes',
-  description: 'Discover three amazing shepherd&apos;s pie recipes - Classic, Vegetarian, and Gourmet variations with detailed instructions.',
+  description: 'Discover 3 amazing shepherd&apos;s pie recipes - Classic, Vegetarian, and Gourmet variations with detailed instructions.',
   keywords: 'shepherd\'s pie, recipes, cooking, comfort food',
   authors: [{ name: 'Shepherd\'s Pie Recipes' }],
   openGraph: {
